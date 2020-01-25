@@ -51,7 +51,7 @@
 
 .wrapper__left-description p {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 0.3rem;
   font-size: 0.8rem;
 }
 
@@ -66,4 +66,10 @@ footer {
 
 .rights {
   margin-top: 0.5rem;
+}
+
+/* subpage */
+
+.container_sub {
+  grid-template-columns: repeat(2, 1fr);
 }
