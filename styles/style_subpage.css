@@ -93,6 +93,11 @@ img {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #f2f2f2;
   margin: auto;
   max-width: 1000px;
   margin-top: 2rem;
@@ -174,5 +179,12 @@ article {
   }
 
   .div2 {
+  }
+  header {
+    margin-bottom: 1rem;
+  }
+  article {
+    display: initial;
+    margin-bottom: 5rem;
   }
 }
