@@ -12,12 +12,15 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 17px;
   color: #333;
+
+  /* variable */
+  --main-bg-color: #ebefef;
 }
 
 body {
   margin: 1rem;
   padding: 0;
-  background: #f2f2f2; /* kleur grijs nog aanpassen naar foto tint */
+  background: var(--main-bg-color);
 }
 a {
   text-decoration: none;
@@ -97,7 +100,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #f2f2f2;
+  background: var(--main-bg-color);
   margin: auto;
   max-width: 1000px;
   margin-top: 2rem;
@@ -128,11 +131,11 @@ article {
   margin-top: 5rem;
 }
 
-.div1 {
+.project__title {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.div2 {
+.project__image {
   grid-area: 1 / 2 / 3 / 4;
 }
 
@@ -168,23 +171,28 @@ article {
 /* mob test */
 
 @media screen and (max-width: 768px) {
-  body {
-    background: #f2f2f2; /* kleur grijs nog aanpassen naar foto tint */
-  }
-
   article {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
   }
 
-  .div1 {
+  .project__title {
+    grid-area: 1 / 1 / 2 / 2;
   }
 
-  .div2 {
+  .project__image {
+    grid-area: 2 / 1 / 3 / 2;
   }
+
   header {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
-  article {
-    display: initial;
-    margin-bottom: 5rem;
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .project__title p {
+    margin: 0;
   }
 }

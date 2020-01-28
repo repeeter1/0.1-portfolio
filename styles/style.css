@@ -1,3 +1,9 @@
+/* todo 
+shadow on scroll
+popup contact form 
+
+*/
+
 html {
   box-sizing: border-box;
 }
@@ -12,6 +18,9 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 17px;
   color: #333;
+
+  /* variable */
+  --main-bg-color: #ebefef;
 }
 
 /* utility */
@@ -61,7 +70,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background: #f2f2f2;
+  background: var(--main-bg-color);
 }
 
 .container {
