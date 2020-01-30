@@ -95,6 +95,12 @@ img {
   width: 100%;
 }
 
+.logo {
+  width: 200px;
+  align-self: center;
+  margin: 2rem;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -159,6 +165,10 @@ article {
 
 .center-title {
   text-align: center;
+}
+
+.planner__list li {
+  margin-bottom: 2rem;
 }
 
 /*  */
