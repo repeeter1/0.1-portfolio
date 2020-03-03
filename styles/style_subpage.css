@@ -217,13 +217,20 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+.connect {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+}
 
-footer h1 {
-  margin-bottom: 5rem;
+footer h3 {
+  margin-bottom: 2rem;
 }
 
 .connect i {
   color: #b3b3b3;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .connect i:hover {
@@ -232,6 +239,5 @@ footer h1 {
 
 .fas,
 .fab {
-  margin-left: 2rem;
   font-size: 5rem;
 }
