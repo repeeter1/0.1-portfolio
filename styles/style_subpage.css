@@ -119,10 +119,6 @@ header {
   align-items: flex-start;
 }
 
-#header.active {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
 .title__wrapper {
   display: flex;
   flex-direction: column;
@@ -212,4 +208,30 @@ article {
   .project__title p {
     margin: 0;
   }
+}
+
+/* contact */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h1 {
+  margin-bottom: 5rem;
+}
+
+.connect i {
+  color: #b3b3b3;
+}
+
+.connect i:hover {
+  color: #959393;
+}
+
+.fas,
+.fab {
+  margin-left: 2rem;
+  font-size: 5rem;
 }
